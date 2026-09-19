@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="钟承亿个人简历：网络空间安全、后端开发与 AI Agent。">
+    <meta name="theme-color" content="#0c1424">
+    <title>钟承亿 · 网络安全与 AI Agent</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="返回个人简历首页"><span class="brand-mark">CY</span><span class="brand-name">CHENGYI<br><small>SECURITY / AI</small></span></a>
+      <nav class="main-nav" aria-label="页面导航"><a href="#about">关于我</a><a href="#experience">实习经历</a><a href="#projects">项目</a><a href="#skills">技能</a></nav>
+      <div class="header-actions"><button class="theme-button" id="themeToggle" type="button" aria-label="切换深浅色主题">◐</button><a class="contact-button" href="mailto:2165389589@qq.com">联系我 <span>↗</span></a></div>
+      <button class="mobile-menu" id="mobileMenu" type="button" aria-label="打开导航" aria-expanded="false">☰</button>
+    </header>
+
+    <main>
+      <section class="hero wrap" id="about">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> PERSONAL RESUME / 2026</p>
+          <h1>钟承亿</h1>
+          <p class="hero-title">网络安全 · 后端开发 · AI Agent</p>
+          <p class="hero-summary">华中科技大学网络空间安全本科生，关注安全运营自动化、威胁情报分析和可验证的多智能体工作流。</p>
+          <div class="hero-links"><a href="mailto:2165389589@qq.com">2165389589@qq.com</a><span>·</span><span>上海市</span><span>·</span><a href="tel:18217249924">182 1724 9924</a></div>
+        </div>
+        <div class="hero-aside"><div class="availability"><span></span> OPEN TO OPPORTUNITIES</div><p>把复杂的安全流程拆成清晰、可追踪、能验证的系统。</p><div class="hero-rule"></div><div class="hero-meta"><span>01</span><span>HUST / CYBERSECURITY</span></div></div>
+      </section>
+
+      <section class="wrap section" id="experience">
+        <div class="section-heading"><div><span class="section-number">01</span><h2>实习经历</h2></div><span class="section-caption">EXPERIENCE</span></div>
+        <article class="experience-card">
+          <div class="experience-top"><div><h3>德勤</h3><p>网络安全方向实习</p></div><span class="experience-tag">CYBERSECURITY</span></div>
+          <div class="experience-grid">
+            <div class="experience-item"><span class="item-index">01</span><div><h4>漏洞复测</h4><p>参与漏洞修复后的复测工作，验证原有漏洞是否仍可复现，核对修复有效性。</p></div></div>
+            <div class="experience-item"><span class="item-index">02</span><div><h4>工厂暴露面研究</h4><p>面向制造业客户开展工厂暴露面与 OSINT 公开信息研究，检索公开代码、文档、社交媒体及公开入口，交叉核验来源并整理证据、风险说明与 Finding 报告。</p></div></div>
+            <div class="experience-item"><span class="item-index">03</span><div><h4>Agent 开发</h4><p>开发 Delta AI 威胁情报分析智能体及工作平台，串联 RSS / Atom 采集、正文清洗与去重、LLM 结构化分析、规则评分、人工审核及 Word 周报生成。</p></div></div>
+          </div>
+          <div class="stack-line"><strong>技术栈</strong><span>Java / Spring Boot</span><span>Python / FastAPI</span><span>React</span><span>PostgreSQL</span><span>RabbitMQ</span><span>S3 兼容对象存储</span><span>LLM API</span></div>
+        </article>
+      </section>
+
+      <section class="wrap section" id="projects">
+        <div class="section-heading"><div><span class="section-number">02</span><h2>项目经历</h2></div><span class="section-caption">SELECTED WORK</span></div>
+        <div class="project-grid">
+          <a class="project-card project-card-dark" href="project.html#shadowtrace"><div class="project-card-top"><span class="project-type">揭榜挂帅项目</span><span class="project-arrow">↗</span></div><div class="project-index">01</div><h3>ShadowTrace</h3><p>安全运营多智能体系统</p><div class="project-tags"><span>LangGraph</span><span>RAG</span><span>FastAPI</span></div><div class="project-card-footer">查看项目详情 <span>→</span></div></a>
+          <a class="project-card project-card-light" href="project.html#delta-ai"><div class="project-card-top"><span class="project-type">德勤实习项目</span><span class="project-arrow">↗</span></div><div class="project-index">02</div><h3>Delta AI</h3><p>威胁情报采集与分析工作平台</p><div class="project-tags"><span>Spring Boot</span><span>PostgreSQL</span><span>LLM</span></div><div class="project-card-footer">查看项目详情 <span>→</span></div></a>
+        </div>
+      </section>
+
+      <section class="wrap section" id="skills">
+        <div class="section-heading"><div><span class="section-number">03</span><h2>专业技能</h2></div><span class="section-caption">TOOLKIT</span></div>
+        <div class="skills-grid">
+          <div class="skill-block"><span class="skill-label">01 / BACKEND</span><h3>编程与后端</h3><p>C、Python、Java；FastAPI、Spring Boot；Linux 环境下的服务开发与接口设计。</p></div>
+          <div class="skill-block"><span class="skill-label">02 / AGENT</span><h3>Agent 与检索</h3><p>LangGraph 多智能体编排、LLM API 接入、RAG、pgvector 向量检索与证据引用。</p></div>
+          <div class="skill-block"><span class="skill-label">03 / DATA</span><h3>数据库与部署</h3><p>SQL、PostgreSQL、Redis、Docker Compose；理解异步任务、消息确认与幂等处理。</p></div>
+          <div class="skill-block"><span class="skill-label">04 / SECURITY</span><h3>安全实践</h3><p>漏洞复测、OSINT 公开信息研究、sqlmap、Wireshark、网络流量分析。</p></div>
+        </div>
+      </section>
+
+      <section class="wrap section education-section">
+        <div class="section-heading"><div><span class="section-number">04</span><h2>教育背景</h2></div><span class="section-caption">EDUCATION</span></div>
+        <div class="education-row"><div><h3>华中科技大学</h3><p>网络空间安全 · 本科</p></div><span class="education-date">2024.09 — 至今</span></div>
+        <p class="courses"><strong>相关课程</strong> 计算机网络、操作系统、编译原理、数字／模拟电路、数据结构、数据库、C 语言程序设计、Python 程序设计</p>
+      </section>
+    </main>
+
+    <footer class="site-footer wrap"><span>© 2026 CHENGYI ZHONG</span><span>NETWORK SECURITY / AI AGENT</span></footer>
+  </body>
+</html>

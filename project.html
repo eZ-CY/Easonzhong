@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="钟承亿项目详情：ShadowTrace 与 Delta AI。">
+    <meta name="theme-color" content="#0c1424">
+    <title>项目详情 · 钟承亿</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body class="project-page">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="返回个人简历首页"><span class="brand-mark">CY</span><span class="brand-name">CHENGYI<br><small>SECURITY / AI</small></span></a>
+      <nav class="main-nav" aria-label="页面导航"><a href="index.html#about">关于我</a><a href="index.html#experience">实习经历</a><a href="index.html#projects">项目</a><a href="index.html#skills">技能</a></nav>
+      <div class="header-actions"><button class="theme-button" id="themeToggle" type="button" aria-label="切换深浅色主题">◐</button><a class="contact-button" href="mailto:2165389589@qq.com">联系我 <span>↗</span></a></div>
+      <button class="mobile-menu" id="mobileMenu" type="button" aria-label="打开导航" aria-expanded="false">☰</button>
+    </header>
+    <main class="project-main wrap">
+      <a class="back-link" href="index.html#projects">← 返回项目列表</a>
+      <div id="shadowtrace" class="detail-project detail-dark">
+        <div class="detail-kicker">PROJECT 01 / XH-202614</div><h1>ShadowTrace</h1><p class="detail-subtitle">基于可验证证据链图谱推演与动态任务编排的安全运营多智能体系统</p><div class="detail-meta"><span>揭榜挂帅项目</span><span>AI + 安全大模型平台的智能体研究</span><span>Mock XDR 演示闭环</span></div>
+        <div class="detail-layout"><div class="detail-story"><h2>项目概述</h2><p>ShadowTrace 面向安全运营中心的告警研判与处置，将接入、分诊、取证、知识增强、关系图谱、风险评分、处置计划、分级审批、执行与验证串成可恢复、可审计的流程。</p><p>系统强调“先证据、后结论”和“先审批、后副作用”：模型负责受约束的分析与规划，关键动作由后端权限、审批、幂等和独立验证共同控制。</p></div><div class="detail-facts"><div><span>核心流程</span><strong>接入 → 研判 → 审批 → 执行 → 验证</strong></div><div><span>运行方式</span><strong>Mock XDR + Agent / 审批 / 执行闭环</strong></div><div><span>我的关注</span><strong>Agent 编排、RAG、可靠写回</strong></div></div></div>
+        <div class="detail-section"><h2>主要实现</h2><div class="detail-list"><div><b>01</b><h3>多智能体编排</h3><p>基于 LangGraph 状态图组织分诊、取证、风险评分、处置、验证及报告流程；结合 Redis Checkpoint 与 Celery 支持审批挂起、断点恢复和异步任务执行。</p></div><div><b>02</b><h3>RAG 与证据链</h3><p>结合 PostgreSQL / pgvector 向量检索、全文检索与 RRF 融合，检索 ATT&CK、SOAR 剧本及历史案例；关联实体、证据和攻击路径，为研判结论提供可追溯依据。</p></div><div><b>03</b><h3>受控处置</h3><p>通过分级审批、Outbox、幂等控制与外部状态回读组织执行和写回，独立验证动作结果，避免把本地成功状态误认为外部动作已生效。</p></div></div></div>
+        <div class="detail-stack"><span>Python</span><span>FastAPI</span><span>LangGraph</span><span>PostgreSQL / pgvector</span><span>Redis</span><span>Celery</span><span>React / TypeScript</span><span>Socket.IO</span><span>Docker Compose</span></div>
+      </div>
+      <div id="delta-ai" class="detail-project detail-light">
+        <div class="detail-kicker">PROJECT 02 / DELOITTE INTERNSHIP</div><h1>Delta AI</h1><p class="detail-subtitle">威胁情报采集与分析工作平台</p><div class="detail-meta"><span>德勤实习项目</span><span>可追溯情报分析</span><span>LLM + 规则评分</span></div>
+        <div class="detail-layout"><div class="detail-story"><h2>项目概述</h2><p>Delta AI 将威胁情报从来源采集、内容清洗、精确去重推进到结构化分析、确定性评分、人工审核和 Word 周报生成，重点解决来源不可追溯、模型结果难复核和任务执行不稳定的问题。</p><p>平台保留原始证据、分析版本、评分版本和审核快照，使每条输出都能回到来源、版本和人工决定。</p></div><div class="detail-facts"><div><span>核心流程</span><strong>采集 → 清洗 → 分析 → 审核 → 报告</strong></div><div><span>数据链路</span><strong>RSS / Atom → Worker → PostgreSQL / Object Storage</strong></div><div><span>我的关注</span><strong>Agent 分析、Schema 校验、结果追溯</strong></div></div></div>
+        <div class="detail-section"><h2>主要实现</h2><div class="detail-list"><div><b>01</b><h3>采集与标准化</h3><p>支持 RSS / Atom 采集、文章获取、HTML 清洗、标题与 URL 标准化、内容指纹和精确去重；保留来源关联和原始对象引用。</p></div><div><b>02</b><h3>结构化 AI 分析</h3><p>通过 OpenAI-compatible Provider 生成技术摘要、管理层摘要、分类、实体、建议动作和证据引用，并使用 Schema 校验和证据引用约束输出。</p></div><div><b>03</b><h3>评分与审核报告</h3><p>使用版本化规则进行质量、风险和置信度评分；人工编辑与批准保留历史版本，最终从批准快照生成不可变 Word 周报。</p></div></div></div>
+        <div class="detail-stack"><span>Java / Spring Boot</span><span>Python / FastAPI</span><span>React</span><span>PostgreSQL</span><span>RabbitMQ</span><span>S3 兼容对象存储</span><span>LLM API</span></div>
+      </div>
+    </main>
+    <footer class="site-footer wrap"><span>© 2026 CHENGYI ZHONG</span><span><a href="index.html#projects">返回项目列表</a></span></footer>
+  </body>
+</html>
